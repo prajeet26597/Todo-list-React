@@ -13,6 +13,12 @@ function Todo() {
         <div className = {todo.isComplete ? 'todo-row complete' : 
         'todo-row'} key={index}>
 
+                <div key = {todo.id} onClick = {() => completeTodo(todo.id)}>
+                </div>
+                <div className="icons">
+                    
+                </div>
+
             </div>
     ))
 }
